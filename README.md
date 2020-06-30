@@ -1,1 +1,1 @@
-# Data-Science-Masters-Program-Classifier
+# Data-Science-Masters-Program-Tuition
