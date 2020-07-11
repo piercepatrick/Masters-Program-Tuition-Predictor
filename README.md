@@ -19,7 +19,7 @@
 -- https://www.kaggle.com/mrtechnical011/support-vector-regression  
 
 # Web Scraping
-Utilized chrome extension simplescraper to scrape urls of each program on mastersportal.com related to Data Science in the USA. With each program I got the following:
+Utilized chrome extension simplescraper to scrape urls of each program on mastersportal.com related to Data Science in the USA. I then obtained features from each link using BeautifulSoup. With each program I got the following:
 
 - University Name  
 - Program Name  
