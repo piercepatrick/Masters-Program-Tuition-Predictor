@@ -1,4 +1,4 @@
-# Data Science Related Masters Program Tuition Predictor
+# Data Science Related Masters Program Tuition Predictor: https://ds-masters-tuition-predictor.herokuapp.com/ 
 - Created a tool that estimates Data Science related graduate program's tuition (MAE ~ $ 10K) to help Data Scientists explore different options for graduate school.
 - Scraped program descriptions from mastersportal.com using simplescraper and beautifulsoup.
 - Engineered features from each program to quantify the value universities put on gpa, gre, gmat, toefl, and ielts.
@@ -46,8 +46,7 @@ Utilized chrome extension simplescraper to scrape urls of each program on master
 - Filtered the DataFrame for program names that included keywords related to Data Science.  
 - Dropped columns 'role', 'apply_date', 'gmat', , &'gre'.  
 - Stripped all textual columns of preceding and succeeding brackets and quotation marks.  
-- Replaced column values that were empty with Nan.  
-- Visualized missing values in the DataFrame. 
+- Replaced column values that were empty with Nan.   
 - Cleaned the description column using texthero.  
 - Created columns for whether or not the program requires the following:  
   - GRE  
@@ -62,8 +61,30 @@ Utilized chrome extension simplescraper to scrape urls of each program on master
   - Spring Start 
   - Summer Start 
   - University Tier Ranking 
+- Visualized missing values in the DataFrame.  
+<img src="/Images%20for%20readme/corr_of_nulls.PNG" width= "500">   
+<img src="/Images%20for%20readme/heatmap_of_nulls.PNG" >   
 
 # EDA
-- Created interactive dashboard on Tableau that displays each states programs, credits required for each, delivery method, and tuition.
-- **Tableau Workbook:** https://github.com/piercepatrick/Masters-Program-Tuition-Predictor/tree/master/Tableau%20Work 
-- I also utilized Python for exploratory data anlaysis.
+- Created interactive dashboard on Tableau that displays each states programs, credits required for each, delivery method, and tuition. 
+- **Tableau Workbook:** https://github.com/piercepatrick/Masters-Program-Tuition-Predictor/tree/master/Tableau%20Work  
+<img src="/Tableau%20Work/DS%20Masters%20Dashboard.png" width="750">
+- I also utilized Python for exploratory data anlaysis. 
+<img src="/Images%20for%20readme/corr.PNG" > 
+<img src="/Images%20for%20readme/delivered.PNG" > 
+<img src="/Images%20for%20readme/disciplines.PNG" >  
+
+# Model Building 
+- Created dummy variables 
+- Split the data into train and tests sets 
+- Models used for predicting tuition: 
+  - **Multiple Linear Regression:** MAE = 15258  
+  - **Lasso Regression:** MAE = 12644   
+  - **Random Forest:** MAE = 10954 
+  - **Support Vector Regression:** MAE = 15750
+  - **XGBoost:** MAE = 11988 
+
+# Productionization
+Built a web app using streamlit that allows the user to adjust program parameters and receive an estimated tuition. I then deployed the web app to a server using heroku. 
+The app can be found here: https://ds-masters-tuition-predictor.herokuapp.com/
+  
