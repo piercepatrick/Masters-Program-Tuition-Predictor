@@ -11,10 +11,10 @@
 - **Tableau Version:** 2020.2   
 - **Packages used:** pandas, numpy, matplotlib, sklearn, seaborn, beautifulsoup, urllib, texthero, sidetable, missingno, wordcloud, nltk       
 - **Simple Scraper**: https://simplescraper.io/docs/    
-- **BeautifulSoup:** https://www.youtube.com/watch?v=Dh9Ihheqyu8&t=493s  
+- **BeautifulSoup Tutorial:** https://www.youtube.com/watch?v=Dh9Ihheqyu8&t=493s  
 - **Ken Jee's Project from Scratch:** https://www.youtube.com/playlist?list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t   
-- **Streamlit / Heroku:** https://www.youtube.com/watch?v=mQ7rGcE766k   
-- **Model Building:**  
+- **Streamlit / Heroku Tutorial:** https://www.youtube.com/watch?v=mQ7rGcE766k   
+- **Model Building Resources:**  
 -- https://www.kaggle.com/apapiu/regularized-linear-models   
 -- https://www.kaggle.com/mrtechnical011/support-vector-regression  
 
